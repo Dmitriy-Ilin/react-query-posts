@@ -125,14 +125,10 @@ const PostsList = () => {
         </button>
         <button 
           onClick={() => {
-            // if (!isPlaceholderData && data.hasMore) {
-            //   setPage((prev) => prev + 1)
-            // } 
             if (!isPlaceholderData) {
               setPage((prev) => prev + 1)
             } 
           }}
-          // disabled={isPlaceholderData || !data?.hasMore}
           disabled={page === 11}
         >
           next page
